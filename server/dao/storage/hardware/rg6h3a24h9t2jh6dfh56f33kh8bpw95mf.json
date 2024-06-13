@@ -1,0 +1,45 @@
+{
+  "id": "rg6h3a24h9t2jh6dfh56f33kh8bpw95mf",
+  "name": "AMD Ryzen 7 7800X3D",
+  "type": "cpu",
+  "price": "449",
+  "ranking": "3",
+  "singleCore": "3120",
+  "multiCore": "18700",
+  "frequency": "4.8",
+  "cores": "16",
+  "cache": "32",
+  "basePower": "105",
+  "maxPower": "220",
+  "memoryType": "DDR4",
+  "comments": [
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+      "hwId": "rg6h3a24h9t2jh6dfh56f33kh8bpw95mf.",
+      "text": "Best gaming CPU on the planet, getting 500+ FPS in CS2.",
+      "rating": "5"
+    },
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33r",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m0",
+      "hwId": "rg6h3a24h9t2jh6dfh56f33kh8bpw95mf.",
+      "text": "THE GOAT",
+      "rating": "5"
+    },
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+      "hwId": "rg6h3a24h9t2jh6dfh56f33kh8bpw95mf.",
+      "text": "Upgraded from i9 9900K, the upgrade is absolutely amazing.",
+      "rating": "5"
+    },
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33r",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m0",
+      "hwId": "rg6h3a24h9t2jh6dfh56f33kh8bpw95mf.",
+      "text": "Requires a better cooler but compared to Intel it doesn't blow up your house.",
+      "rating": "5"
+    }
+  ]
+}

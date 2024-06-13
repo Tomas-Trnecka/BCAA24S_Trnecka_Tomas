@@ -1,0 +1,15 @@
+{
+    "id": "ig6h3a24h9t2jh6dfh56f33kh8bpw96mr",
+    "name": "Intel Core i9 13900K",
+    "type": "cpu",
+    "price": "549",
+    "ranking": "4",
+    "singleCore": "3080",
+    "multiCore": "19999",
+    "frequency": "5.2",
+    "cores": "20",
+    "cache": "40",
+    "basePower": "135",
+    "maxPower": "260",
+    "memoryType": "DDR5"
+}

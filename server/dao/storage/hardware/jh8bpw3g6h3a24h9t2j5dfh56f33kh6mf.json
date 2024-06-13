@@ -1,0 +1,13 @@
+{
+    "id": "jh8bpw3g6h3a24h9t2j5dfh56f33kh6mf",
+    "name": "AMD Radeon RX 6900 XT",
+    "type": "gpu",
+    "price": "999",
+    "ranking": "3",
+    "vram": "16",
+    "memoryType": "GDDR6",
+    "frequency": "2015",
+    "bus": "256",
+    "power": "300",
+    "comments": []
+  }

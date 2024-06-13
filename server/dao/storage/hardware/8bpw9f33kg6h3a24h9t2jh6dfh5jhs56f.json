@@ -1,0 +1,31 @@
+{
+  "id": "8bpw9f33kg6h3a24h9t2jh6dfh5jhs56f",
+  "name": "AMD Ryzen 9 7900X3D",
+  "type": "cpu",
+  "price": "649",
+  "ranking": "2",
+  "singleCore": "3279",
+  "multiCore": "23679",
+  "frequency": "6.5",
+  "cores": "32",
+  "cache": "48",
+  "basePower": "145",
+  "maxPower": "273",
+  "memoryType": "DDR5",
+  "comments": [
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+      "hwId": "8bpw9f33kg6h3a24h9t2jh6dfh5jhs56f.",
+      "text": "Great CPU, but if all you do is gaming, buy 7800X3D instead.",
+      "rating": "5"
+    },
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33r",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m0",
+      "hwId": "8bpw9f33kg6h3a24h9t2jh6dfh5jhs56f.",
+      "text": "Amazing single and multicore performance, now I am getting one ganzillion fps in GTA V. 10/10 would recommend.",
+      "rating": "5"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "78dfh356h3a24h9t2jh6hkh8bpw9f33i",
+    "name": "NVIDIA GeForce RTX 3080 Ti",
+    "type": "gpu",
+    "price": "1199",
+    "ranking": "4",
+    "vram": "12",
+    "memoryType": "GDDR6X",
+    "frequency": "1710",
+    "bus": "384",
+    "power": "350",
+    "comments": []
+  }

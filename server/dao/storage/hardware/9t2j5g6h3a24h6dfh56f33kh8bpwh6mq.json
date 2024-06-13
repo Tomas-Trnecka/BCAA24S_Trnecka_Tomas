@@ -1,0 +1,13 @@
+{
+    "id": "9t2j5g6h3a24h6dfh56f33kh8bpwh6mq",
+    "name": "NVIDIA GeForce RTX 3070 Ti",
+    "type": "gpu",
+    "price": "599",
+    "ranking": "5",
+    "vram": "8",
+    "memoryType": "GDDR6X",
+    "frequency": "1770",
+    "bus": "256",
+    "power": "290",
+    "comments": []
+  }

@@ -1,0 +1,31 @@
+{
+    "id": "2jh6hkh8dfh356h3a24g6f33k9t24h9t",
+    "name": "Intel Core i9 14100K",
+    "type": "cpu",
+    "price": "129",
+    "ranking": "8",
+    "singleCore": "3189",
+    "multiCore": "21989",
+    "frequency": "6.2",
+    "cores": "28",
+    "cache": "40",
+    "basePower": "135",
+    "maxPower": "263",
+    "memoryType": "DDR5",
+    "comments": [
+      {
+        "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+        "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+        "hwId": "2jh6hkh8dfh356h3a24g6f33k9t24h9t.",
+        "text": "OK for the money",
+        "rating": "4"
+      },
+      {
+        "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33r",
+        "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m0",
+        "hwId": "2jh6hkh8dfh356h3a24g6f33k9t24h9t.",
+        "text": "Good budget CPU",
+        "rating": "4"
+      }
+    ]
+  }

@@ -5,7 +5,7 @@ function FinderProvider({ children }) {
   const [eventLoadObject, setEventLoadObject] = useState({
     state: "ready",
     error: null,
-    data: null,
+    data: [],
   });
 
   useEffect(() => {
@@ -14,107 +14,136 @@ function FinderProvider({ children }) {
 
   async function handleLoad() {
     setEventLoadObject((current) => ({ ...current, state: "pending" }));
-    const response = await fetch(`http://localhost:8000/hardware/list`, {
-      method: "GET",
-    });
-    const responseJson = await response.json();
-    console.log(responseJson);
-    if (response.status < 400) {
-      setEventLoadObject({ state: "ready", data: responseJson });
-      return responseJson;
-    } else {
-      setEventLoadObject((current) => ({
+    try {
+      const response = await fetch(`http://localhost:8000/hardware/list`, {
+        method: "GET",
+      });
+      const responseJson = await response.json();
+      if (response.ok) {
+        setEventLoadObject({ state: "ready", data: responseJson, error: null });
+      } else {
+        setEventLoadObject((current) => ({
+          state: "error",
+          data: current.data,
+          error: responseJson.error || "Error loading data",
+        }));
+      }
+    } catch (error) {
+      setEventLoadObject({
         state: "error",
-        data: current.data,
-        error: responseJson.error,
-      }));
-      throw new Error(JSON.stringify(responseJson, null, 2));
+        data: [],
+        error: error.message,
+      });
     }
   }
 
   async function handleCreate(dtoIn) {
     setEventLoadObject((current) => ({ ...current, state: "pending" }));
-    const response = await fetch(`http://localhost:8000/hardware/create`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dtoIn),
-    });
-    const responseJson = await response.json();
+    try {
+      const response = await fetch(`http://localhost:8000/hardware/create`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dtoIn),
+      });
+      const responseJson = await response.json();
 
-    if (response.status < 400) {
-      setEventLoadObject((current) => {
-        current.data.push(responseJson);
-        current.data.sort((a, b) => new Date(a.date) - new Date(b.date));
-        return { state: "ready", data: current.data };
-      });
-      return responseJson;
-    } else {
-      setEventLoadObject((current) => {
-        return { state: "error", data: current.data, error: responseJson };
-      });
-      throw new Error(JSON.stringify(responseJson, null, 2));
+      if (response.ok) {
+        setEventLoadObject((current) => {
+          const newData = [...(current.data || []), responseJson];
+          newData.sort((a, b) => new Date(a.date) - new Date(b.date));
+          return { state: "ready", data: newData, error: null };
+        });
+        return responseJson;
+      } else {
+        setEventLoadObject((current) => ({
+          state: "error",
+          data: current.data,
+          error: responseJson.error || "Error creating data",
+        }));
+        throw new Error(JSON.stringify(responseJson, null, 2));
+      }
+    } catch (error) {
+      setEventLoadObject((current) => ({
+        state: "error",
+        data: current.data,
+        error: error.message,
+      }));
+      throw error;
     }
   }
 
   async function handleUpdate(dtoIn) {
     setEventLoadObject((current) => ({ ...current, state: "pending" }));
-    const response = await fetch(`http://localhost:8000/hardware/update`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(dtoIn),
-    });
-    const responseJson = await response.json();
-
-    if (response.status < 400) {
-      setEventLoadObject((current) => {
-        const eventIndex = current.data.findIndex(
-          (e) => e.id === responseJson.id
-        );
-        current.data[eventIndex] = responseJson;
-        current.data.sort((a, b) => new Date(a.date) - new Date(b.date));
-        return { state: "ready", data: current.data };
+    try {
+      const response = await fetch(`http://localhost:8000/hardware/update`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dtoIn),
       });
-      return responseJson;
-    } else {
+      const responseJson = await response.json();
+
+      if (response.ok) {
+        setEventLoadObject((current) => {
+          const newData = current.data.map((item) =>
+            item.id === responseJson.id ? responseJson : item
+          );
+          newData.sort((a, b) => new Date(a.date) - new Date(b.date));
+          return { state: "ready", data: newData, error: null };
+        });
+        return responseJson;
+      } else {
+        setEventLoadObject((current) => ({
+          state: "error",
+          data: current.data,
+          error: responseJson.error || "Error updating data",
+        }));
+        throw new Error(JSON.stringify(responseJson, null, 2));
+      }
+    } catch (error) {
       setEventLoadObject((current) => ({
         state: "error",
         data: current.data,
-        error: responseJson,
+        error: error.message,
       }));
-      throw new Error(JSON.stringify(responseJson, null, 2));
+      throw error;
     }
   }
 
   async function handleDelete(dtoIn) {
     setEventLoadObject((current) => ({ ...current, state: "pending" }));
-    const response = await fetch(`http://localhost:8000/hardware/delete`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(dtoIn),
-    });
-    const responseJson = await response.json();
-
-    if (response.status < 400) {
-      setEventLoadObject((current) => {
-        const eventIndex = current.data.findIndex(
-          (e) => e.id === responseJson.id
-        );
-        current.data.splice(eventIndex, 1);
-        return { state: "ready", data: current.data };
+    try {
+      const response = await fetch(`http://localhost:8000/hardware/delete`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dtoIn),
       });
-      return responseJson;
-    } else {
+      const responseJson = await response.json();
+
+      if (response.ok) {
+        setEventLoadObject((current) => {
+          const newData = current.data.filter(
+            (item) => item.id !== responseJson.id
+          );
+          return { state: "ready", data: newData, error: null };
+        });
+        return responseJson;
+      } else {
+        setEventLoadObject((current) => ({
+          state: "error",
+          data: current.data,
+          error: responseJson.error || "Error deleting data",
+        }));
+        throw new Error(JSON.stringify(responseJson, null, 2));
+      }
+    } catch (error) {
       setEventLoadObject((current) => ({
         state: "error",
         data: current.data,
-        error: responseJson,
+        error: error.message,
       }));
-      throw new Error(JSON.stringify(responseJson, null, 2));
+      throw error;
     }
   }
-
 
   const value = {
     state: eventLoadObject.state,

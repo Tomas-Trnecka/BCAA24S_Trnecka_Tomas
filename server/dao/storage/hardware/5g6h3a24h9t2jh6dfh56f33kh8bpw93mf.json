@@ -1,6 +1,6 @@
 {
     "id": "5g6h3a24h9t2jh6dfh56f33kh8bpw93mf",
-    "name": "nVidia RTX 2060",
+    "name": "NVIDIA RTX 2060",
     "type": "gpu",
     "price": "230",
     "ranking": "87",
@@ -9,5 +9,13 @@
     "frequency": "1365",
     "bus": "192",
     "power": "160",
-    "comments": []
+    "comments": [
+        {
+          "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+          "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+          "hwId": "5g6h3a24h9t2jh6dfh56f33kh8bpw93mf.",
+          "text": "Quite bad to be honest, outdated in 2024.",
+          "rating": "3"
+        }
+      ]
 }

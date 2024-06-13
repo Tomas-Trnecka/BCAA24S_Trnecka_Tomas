@@ -1,0 +1,20 @@
+{
+    "id": "g6h3a24h9t2jh6dfh56f33kh8bpw94mf",
+    "name": "NVIDIA GeForce RTX 3090",
+    "type": "gpu",
+    "price": "1499",
+    "ranking": "2",
+    "vram": "24",
+    "memoryType": "GDDR6X",
+    "frequency": "1695",
+    "bus": "384",
+    "power": "350",
+    "comments": [{
+      "id": "8g6h4a24h962jh6doh56f33kh8bpw93m9",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+      "hwId": "g6h3a24h9t2jh6dfh56f33kh8bpw94mf.",
+      "text": "Very expensive and very hot, I use it to heat my whirlpool, very cool.",
+      "rating": "5"
+  }
+  ]
+  }

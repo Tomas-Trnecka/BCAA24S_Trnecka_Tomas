@@ -1,0 +1,31 @@
+{
+    "id": "zg6h3a24h9t2jh6dfh56f33kh8bpw94mb",
+    "name": "Intel Core i9 14900K",
+    "type": "cpu",
+    "price": "599",
+    "ranking": "1",
+    "singleCore": "3039",
+    "multiCore": "20939",
+    "frequency": "6",
+    "cores": "24",
+    "cache": "36",
+    "basePower": "125",
+    "maxPower": "253",
+    "memoryType": "DDR5",
+    "comments": [
+        {
+          "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+          "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+          "hwId": "zg6h3a24h9t2jh6dfh56f33kh8bpw94mb.",
+          "text": "Had some problems with heating this winter, thanks Intel for saving me. 10/10",
+          "rating": "5"
+        },
+        {
+          "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33r",
+          "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m0",
+          "hwId": "zg6h3a24h9t2jh6dfh56f33kh8bpw94mb.",
+          "text": "I LOVE INTEL AMD SUCKS",
+          "rating": "9999"
+        }
+      ]
+}

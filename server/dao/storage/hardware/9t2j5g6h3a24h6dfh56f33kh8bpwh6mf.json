@@ -1,0 +1,15 @@
+{
+    "id": "9t2j5g6h3a24h6dfh56f33kh8bpwh6mf",
+    "name": "Intel Core i5 14500K",
+    "type": "cpu",
+    "price": "399",
+    "ranking": "6",
+    "singleCore": "2889",
+    "multiCore": "19489",
+    "frequency": "5.6",
+    "cores": "16",
+    "cache": "28",
+    "basePower": "105",
+    "maxPower": "223",
+    "memoryType": "DDR5"
+  }

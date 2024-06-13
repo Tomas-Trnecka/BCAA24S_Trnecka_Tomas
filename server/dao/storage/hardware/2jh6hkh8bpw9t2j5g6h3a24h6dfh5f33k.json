@@ -1,0 +1,31 @@
+{
+  "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+  "name": "AMD Ryzen 7 7700X",
+  "type": "cpu",
+  "price": "599",
+  "ranking": "7",
+  "singleCore": "3179",
+  "multiCore": "22679",
+  "frequency": "6.5",
+  "cores": "32",
+  "cache": "48",
+  "basePower": "145",
+  "maxPower": "273",
+  "memoryType": "DDR5",
+  "comments": [
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33k",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m9",
+      "hwId": "1g6h3a24h962jh6doh56f33kh8bpw93mf.",
+      "text": "Very good budget CPU.",
+      "rating": "5"
+    },
+    {
+      "id": "2jh6hkh8bpw9t2j5g6h3a24h6dfh5f33r",
+      "userId": "9a6h4a24h962jh6doh56f33kh8bpw93m0",
+      "hwId": "1g6h3a24h962jh6doh56f33kh8bpw93mf.",
+      "text": "Good CPU, but not worth getting the X version. The 7700 is basically the same but cheaper.",
+      "rating": "4"
+    }
+  ]
+}

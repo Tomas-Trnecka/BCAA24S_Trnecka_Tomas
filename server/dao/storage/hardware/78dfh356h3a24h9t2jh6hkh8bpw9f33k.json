@@ -1,0 +1,15 @@
+{
+    "id": "78dfh356h3a24h9t2jh6hkh8bpw9f33k",
+    "name": "Intel Core i7 14700K",
+    "type": "cpu",
+    "price": "499",
+    "ranking": "5",
+    "singleCore": "2989",
+    "multiCore": "20489",
+    "frequency": "5.8",
+    "cores": "20",
+    "cache": "32",
+    "basePower": "115",
+    "maxPower": "243",
+    "memoryType": "DDR5"
+  }
